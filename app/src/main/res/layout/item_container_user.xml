@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/userContainer"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/textFirstChat"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/background_user_icon"
+        android:fontFamily="@font/ubuntu_bold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/view_divider"/>
+
+    <ImageView
+        android:id="@+id/img_selected"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_user_icon"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/ic_accept"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/textFirstChat"
+        app:layout_constraintEnd_toEndOf="@+id/textFirstChat"
+        app:layout_constraintStart_toStartOf="@+id/textFirstChat"
+        app:layout_constraintTop_toTopOf="@+id/textFirstChat"
+        app:tint="@color/white" />
+
+    <View
+        android:id="@+id/view_supporter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textFirstChat"
+        app:layout_constraintTop_toTopOf="@+id/textFirstChat"
+        app:layout_constraintStart_toEndOf="@+id/textFirstChat"/>
+    
+    <ImageView
+        android:id="@+id/img_videoMeeting"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:padding="@dimen/_2sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_video"
+        app:tint="@color/primary"
+        app:layout_constraintBottom_toTopOf="@+id/view_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_AudioMeeting"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/ic_audio"
+        app:tint="@color/primary"
+        app:layout_constraintBottom_toTopOf="@+id/view_divider"
+        app:layout_constraintEnd_toStartOf="@+id/img_videoMeeting"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_userName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/ubuntu_medium"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toTopOf="@+id/view_supporter"
+        app:layout_constraintEnd_toStartOf="@+id/img_AudioMeeting"
+        app:layout_constraintStart_toEndOf="@+id/textFirstChat"/>
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/ubuntu"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toStartOf="@+id/img_AudioMeeting"
+        app:layout_constraintStart_toEndOf="@+id/textFirstChat"
+        app:layout_constraintTop_toBottomOf="@+id/view_supporter"/>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/secondary_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textFirstChat"
+        app:layout_constraintTop_toBottomOf="@+id/textFirstChat"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

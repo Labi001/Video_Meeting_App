@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "965120207580",
+    "project_id": "video-meeting-app-8260f",
+    "storage_bucket": "video-meeting-app-8260f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965120207580:android:4c94b1b927cc514621e219",
+        "android_client_info": {
+          "package_name": "com.labinot.bajrami.video_meeting_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965120207580-ftbh91buuaqol9q986f3k90oscorbtml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzd3V46mNCfucOzsQ6yFDMyMtr18gibKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965120207580-ftbh91buuaqol9q986f3k90oscorbtml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
